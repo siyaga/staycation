@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import React from 'react';
-import 'asset/scss/style.scss';
+import 'assets/scss/style.scss';
+import LandingPage from 'pages/LandingPage';
+
 function App() {
   return ( 
-  <div className = "App" >
-    hai dunia!
+  <div className="App">
+    <Router>
+    <Route exact path="/" component={LandingPage} />
+    </Router>
 
     </div>
   );
